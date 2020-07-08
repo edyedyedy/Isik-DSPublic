@@ -16,18 +16,18 @@ public class MeasureTime {
     
      public static void main(String[] args) throws IOException{
         // call main1 
-//        main1();    
+        main1();    
 //        // call main2 
 //        main2();
     }
     
      public static void main1() throws IOException {
         PrintWriter pw = new PrintWriter("SumtoN.txt");
-//        sumtoN(1); // call one time to load method in the cache
+        sumtoN(1); // call one time to load method in the cache
      
         for (int n =16; n<=65536; n*=2){
             long startTime = System.currentTimeMillis();
-//            sumtoN(n);
+            sumtoN(n);
             long endTime = System.currentTimeMillis();
             long elapsedTime = (endTime-startTime);
             pw.printf("N:%5d       T:%5d \n", n,elapsedTime);
@@ -40,7 +40,25 @@ public class MeasureTime {
         for (int i = 1; i<=N;i++){
             sum+=i;
         }
+        
+       
+        
+        
+        
+        
+        
     }
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
        
        public static void main2() throws IOException {
         PrintWriter pw = new PrintWriter("doubleLoopSum.txt");
