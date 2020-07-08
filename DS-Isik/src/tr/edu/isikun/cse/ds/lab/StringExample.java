@@ -14,7 +14,7 @@ public class StringExample {
         char c='a';
         
         long startTime = System.nanoTime();
-            repeat1(c,100);
+            repeat2(c,100);
             long endTime = System.nanoTime();
             long elapsedTime = (endTime - startTime);
             System.out.println("elapsedTime : "+elapsedTime);   
